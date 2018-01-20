@@ -12,7 +12,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Hello ${pageContext.request.remoteUser}</h1>
         <form action="${pageContext.request.contextPath}/signout" method="post">
             <input type="hidden"                        
 		name="${_csrf.parameterName}"
